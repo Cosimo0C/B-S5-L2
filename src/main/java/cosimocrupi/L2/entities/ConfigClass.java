@@ -2,11 +2,13 @@ package cosimocrupi.L2.entities;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @Configuration
+@PropertySource("application.properties")
 public class ConfigClass {
 /*----------------------------------------TOPPINGS----------------------------------*/
     @Bean(name = "pomodoro")
